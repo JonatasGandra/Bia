@@ -11,6 +11,7 @@ const closeBtn2 = document.querySelector('#close2 img');
 const modal2 = document.querySelector('#escrita')
 const senha = document.querySelector('.senha')
 const codigo = document.querySelector('#senha')
+const digite = document.querySelector('.senha h1')
 
 
 senha.classList.add('hidden')
@@ -24,19 +25,45 @@ mudarPg.addEventListener('click', function () {
     senha.classList.remove('hidden')
     ola.classList.add('hidden')
     clique.classList.add('hidden')
-    
-    //degrade.classList.remove('hidden')
-    //oto.classList.remove('hidden')
-    //section1.classList.remove('hidden')
-    //section2.classList.remove('hidden')
 
-    //setTimeout(() => {
-        //degrade.classList.add('show');
-        //foto.classList.add('show');
-       // section1.classList.add('show');
-        //section2.classList.add('show');
-   // }, 10);
+
+
 })
+const entrar = document.querySelector('#entrar')
+
+entrar.addEventListener('click', () => {
+
+    if (codigo.value === 'bialinda') {
+
+        codigo.classList.add('hidden')
+        entrar.classList.add('hidden')
+        digite.classList.add('hidden')
+        degrade.classList.remove('hidden')
+        ola.classList.add('hidden')
+        clique.classList.add('hidden')
+        degrade.classList.remove('hidden')
+        foto.classList.remove('hidden')
+        section1.classList.remove('hidden')
+        section2.classList.remove('hidden')
+
+        setTimeout(() => {
+            degrade.classList.add('show');
+            foto.classList.add('show');
+            section1.classList.add('show');
+            section2.classList.add('show');
+        }, 10);
+    }else{
+        codigo.classList.add('input-error');
+        entrar.classList.add('input-error');
+        codigo.focus(false)
+    }
+
+})
+
+codigo.addEventListener('focus', () => {
+    codigo.classList.remove('input-error');
+    entrar.classList.remove('input-error');
+});
 
 document.querySelector('#homenagens').addEventListener('click', () => {
     modal.showModal()
