@@ -20,19 +20,22 @@ degrade.classList.add('hidden')
 foto.classList.add('hidden')
 
 mudarPg.addEventListener('click', function () {
+
+    senha.classList.remove('hidden')
     ola.classList.add('hidden')
     clique.classList.add('hidden')
-    degrade.classList.remove('hidden')
-    foto.classList.remove('hidden')
-    section1.classList.remove('hidden')
-    section2.classList.remove('hidden')
+    
+    //degrade.classList.remove('hidden')
+    //oto.classList.remove('hidden')
+    //section1.classList.remove('hidden')
+    //section2.classList.remove('hidden')
 
-    setTimeout(() => {
-        degrade.classList.add('show');
-        foto.classList.add('show');
-        section1.classList.add('show');
-        section2.classList.add('show');
-    }, 10);
+    //setTimeout(() => {
+        //degrade.classList.add('show');
+        //foto.classList.add('show');
+       // section1.classList.add('show');
+        //section2.classList.add('show');
+   // }, 10);
 })
 
 document.querySelector('#homenagens').addEventListener('click', () => {
