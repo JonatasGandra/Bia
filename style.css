@@ -38,12 +38,12 @@ h2,
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-size: 120%;
+  font-size: 130%;
 }
 
 #senha {
   border: black 1px solid;
-  width: 70%;
+  width: 90%;
   height: 3rem;
   background-color: rgba(255, 204, 92, 1);
   font-size: 1.3rem;
@@ -51,13 +51,9 @@ h2,
 
 }
 
-.senha div {
-  display: flex;
-  gap: 8%;
-}
-
 #entrar {
-  width: 20%;
+  margin-top: 5%;
+  width: 90%;
   height: 3.2rem;
   border-radius: 10px;
 }
@@ -217,7 +213,7 @@ body.dialog-open::before {
   font-family: 'Times New Roman', Times, serif;
 }
 .degrade{
-  background-color: linear-gradient(up, blue 20%, yellow 80%;
+  background: linear-gradient(180deg, #FFEEAD 40%, #96CEB4 70%);
 }
 
 @media (max-width: 600px) {
@@ -237,10 +233,7 @@ body.dialog-open::before {
     height: auto;
     max-width: 70%;
   }
-  
-  .rectangle-11 {
-    height: 100vh;
-  }
+
   .foto{
     height: 20%;
   }
