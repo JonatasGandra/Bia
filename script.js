@@ -31,7 +31,7 @@ const entrar = document.querySelector('#entrar')
 
 entrar.addEventListener('click', () => {
 
-    if (codigo.value === 'bialinda') {
+    if (codigo.value === 'biamaravilhosa') {
 
         codigo.classList.add('hidden')
         entrar.classList.add('hidden')
