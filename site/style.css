@@ -212,4 +212,11 @@ body.dialog-open::before {
   border: 2px solid red !important;
 }
 
-@media screen and (min-height: 900px) {}
+.texto{
+  font-size: 1.3rem;
+  color: black;
+  text-align: left;
+  padding: 15% 3%;
+  background-color: transparent;
+  font-family: 'Times New Roman', Times, serif;
+}
