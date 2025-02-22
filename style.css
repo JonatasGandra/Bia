@@ -216,6 +216,9 @@ body.dialog-open::before {
   background-color: transparent;
   font-family: 'Times New Roman', Times, serif;
 }
+.degrade{
+  background-color: black;
+}
 
 @media (max-width: 600px) {
   .inicialPg h1 {
