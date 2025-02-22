@@ -74,14 +74,6 @@ h2,
   transition: opacity 0.5s ease-in-out;
 }
 
-.rectangle-11 {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(180deg, #FFEEAD 20%, #96CEB4 80%);
-  bottom: 0;
-  z-index: -1;
-}
 
 .limite-foto {
   height: 20%;
@@ -119,7 +111,7 @@ h2,
   height: auto;
 }
 
-.rectangle-11,
+
 .foto,
 .section1,
 .section2 {
@@ -128,7 +120,6 @@ h2,
 }
 
 
-.rectangle-11.show,
 .foto.show,
 .section1.show,
 .section2.show {
@@ -248,7 +239,7 @@ body.dialog-open::before {
     height: 100vh;
   }
   .foto{
-    height: 15%;
+    height: 20%;
   }
   
 }
