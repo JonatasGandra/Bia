@@ -41,6 +41,7 @@ entrar.addEventListener('click', () => {
         foto.classList.remove('hidden')
         section1.classList.remove('hidden')
         section2.classList.remove('hidden')
+        mudarPg.classList.add('degrade')
 
         setTimeout(() => {
             foto.classList.add('show');
