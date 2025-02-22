@@ -217,7 +217,7 @@ body.dialog-open::before {
   font-family: 'Times New Roman', Times, serif;
 }
 .degrade{
-  background-color: black;
+  background-color: linear-gradient(up, blue 20%, yellow 80%;
 }
 
 @media (max-width: 600px) {
