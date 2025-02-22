@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgba(255, 238, 173, 1);
 }
 
@@ -29,10 +29,7 @@ h2,
   background-color: transparent;
 }
 
-.inicialPg h1 {
-  font-size: 4.5em;
-  text-shadow: 0 0 10px rgba(38, 38, 38, 0.318);
-}
+
 
 .senha {
   display: flex;
@@ -40,12 +37,12 @@ h2,
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 120%;
 }
 
 #senha {
   border: black 1px solid;
-  width: 20rem;
+  width: 70%;
   height: 3rem;
   background-color: rgba(255, 204, 92, 1);
   font-size: 1.3rem;
@@ -53,8 +50,13 @@ h2,
 
 }
 
+.senha div {
+  display: flex;
+  gap: 8%;
+}
+
 #entrar {
-  width: 5rem;
+  width: 20%;
   height: 3.2rem;
   border-radius: 10px;
 }
@@ -111,7 +113,7 @@ h2,
   background-color: transparent;
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -191,6 +193,7 @@ dialog {
 .especial {
   background-color: rgba(255, 111, 105, 1) !important;
 }
+
 .especial h1 {
   color: white;
   font-weight: 500;
@@ -212,11 +215,30 @@ body.dialog-open::before {
   border: 2px solid red !important;
 }
 
-.texto{
+.texto {
   font-size: 1.3rem;
   color: black;
   text-align: left;
   padding: 15% 3%;
   background-color: transparent;
   font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 600px) {
+  .inicialPg h1 {
+    font-size: 3rem;
+  }
+
+  .senha {
+    font-size: 1.2rem;
+  }
+
+  #senha {
+    width: 90%;
+  }
+
+  .foto {
+    height: auto;
+    max-width: 70%;
+  }
 }
